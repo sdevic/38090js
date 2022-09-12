@@ -10,7 +10,7 @@ return(
   <>
     <NavBar/>
     <ItemListContainer greeting={saludo}/>
-    <ItemCount stock = {22}/>
+    <ItemCount initial={1} stock = {22}/>
   </>
 )
 

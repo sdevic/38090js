@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const ItemCount = ({stock}) =>{
+const ItemCount = ({stock, initial, onAdd}) =>{
  
-  let [contador, setContador] = useState(1);
+  let [contador, setContador] = useState(initial);
   let [titulo, setTitulo] = useState("");
   let [producto, setProducto] = useState(stock);
 
@@ -19,7 +19,7 @@ const ItemCount = ({stock}) =>{
   }
 
   const restar = ()=>{
-    if(contador < 1){
+    if(contador < initial){
       
      setTitulo("No puede ser un numero negativo");
     
@@ -31,13 +31,16 @@ const ItemCount = ({stock}) =>{
     
   }
   const add = ()=>{
-   
+    if(contador > 0){
       
-     setTitulo(`Se realizo la compra de ${contador} milanesas`);
+     setTitulo(`Se agrego al carrito ${contador} milanesas`);
      setProducto(producto - contador);
      setContador(contador = 0);
      
-    
+    }else{
+      setTitulo("No hay productos seleccionados");
+
+    }
     
 
     
