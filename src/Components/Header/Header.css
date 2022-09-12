@@ -65,3 +65,9 @@ nav ul li a{
     text-decoration: none;
     color:grey    
 }
+
+#stock{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    color: red;
+}
