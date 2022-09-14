@@ -11,7 +11,7 @@ const NavBar = ()=> {
         <header>
             <img src={logo} alt="logo" />
             <h1> Wait for it</h1>
-            <nav>
+           <nav>
                 <ul>
                 <li> <a href="">Comida</a></li>
                 <li> <a href="">Bebidas</a></li>
