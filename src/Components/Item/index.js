@@ -1,8 +1,19 @@
+import { Button ,Text,VStack,Image } from "@chakra-ui/react";
+
+
 const Item = ({product})=>{
-    console.log(product?.id)
+    
     return(
         <>
-        <div>{product?.image}</div>
+            {!product ?
+                <> </>
+            :
+                <VStack >
+                    <Text>{product.description}</Text>
+                    <Image id='imgProd' src={product.image} alt="" /> 
+                    <Button>Ver detalle</Button>
+                </VStack>
+            }
         </>
     )
 }

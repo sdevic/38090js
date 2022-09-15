@@ -8,11 +8,17 @@ header{
     
     
 }
-img{
+#logo{
     width: 50.2%;
     grid-column: 1 ;
     grid-row: 1 / 2;
     
+}
+
+#imgProd{
+   
+    
+    width: 10%;
 }
 
 h1{

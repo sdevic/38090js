@@ -9,13 +9,13 @@ import CartWitget from '../CartWidtget/CartWidget'
 const NavBar = ()=> {
     return (
         <header>
-            <img src={logo} alt="logo" />
+            <img  id="logo" src={logo} alt="logo" />
             <h1> Wait for it</h1>
            <nav>
                 <ul>
-                <li> <a href="">Comida</a></li>
-                <li> <a href="">Bebidas</a></li>
-                <li> <a href="">Postres</a></li>
+                <li> <a href="1">Comida</a></li>
+                <li> <a href="2">Bebidas</a></li>
+                <li> <a href="3">Postres</a></li>
                 </ul>
             </nav>
         

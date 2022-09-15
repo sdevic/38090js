@@ -6,7 +6,7 @@ export const products =[
         category: "Comida",
         description: "Milanga con pure",
         price: 1500,
-        stock: 30
+        stock: 10
     }
    ,
    {
