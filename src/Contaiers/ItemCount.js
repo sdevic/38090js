@@ -51,7 +51,7 @@ const ItemCount = ({stock, initial, onAdd}) =>{
     <>
     <p id="stock">Cantidad de milanesas disponibles:{producto}</p>
     <button onClick={restar}>-</button>
-    <input id="cantidad" type="number"  value={contador} ></input>
+    <input id="cantidad" type="number" value={contador} readOnly></input>
     <button onClick={sumar}>+</button>
     <button onClick={add}>Agregar</button>
     <h3>{titulo}</h3>
