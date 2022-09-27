@@ -1,24 +1,24 @@
 import { Button ,Text,VStack,Image } from "@chakra-ui/react";
 
 
-const ItemDetail = ({producto})=>{
+const Item = ({producto})=>{
+    console.log(producto)
     
     return(
         <>
-            {!producto ?
-                <> </>
-            :
+           
             
             <VStack id="vstack">
-                <Text>{producto.description}</Text>
+                
+                <Text>{producto.stock}</Text>
                 <Image id='imgProd' src={producto.image} alt="" /> 
                 <Button>Ver detalle</Button>
             </VStack>
                 
-            }
+            
         </>
     )
 }
 
 
-export  {ItemDetail}  
+export  {Item}  
