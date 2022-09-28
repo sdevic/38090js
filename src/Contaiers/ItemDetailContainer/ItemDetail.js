@@ -1,11 +1,12 @@
 
- import { Item } from "../../Components/Item";
-
+ import { Item } from "../Item/Item";
+ 
 
 
 
 
 const ItemDetail = ({producto})=>{
+    
     
     return(
         <>

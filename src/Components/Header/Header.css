@@ -18,7 +18,7 @@ header{
 #imgProd{
    
     padding-left: 15%;
-    width: 10%;
+    width: 13%;
 }
 
 
@@ -56,26 +56,24 @@ nav{
    
 
 }
-nav ul {
+#menu {
     padding: 0%;
     display: flex;
     justify-content: space-around; 
-   
+    
 }
 
-nav ul li {
+#menuOpciones {
     font-family: 'Amatic SC', cursive;
     font-size: 1.4vw;
     font-weight: bolder;
     list-style: none;
     padding-left: 20%;
     
+    color: grey;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color:grey    
-}
+
 
 #stock{
     font-family: 'Amatic SC', cursive;
