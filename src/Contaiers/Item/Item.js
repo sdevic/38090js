@@ -2,7 +2,7 @@ import { Button ,Text,VStack,Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Item = ({product})=>{
-    
+ 
    
     return(
         <>
@@ -13,7 +13,7 @@ const Item = ({product})=>{
             <VStack id="vstack">
                 <Text>{product.description}</Text>
                 <Image id='imgProd' src={product.image} alt="" /> 
-                <Link to={'/producto/'}>
+                <Link to={`/producto/${product.id}`}>
                     <Button>Ver detalle</Button>
                 </Link>    
                 
@@ -26,3 +26,4 @@ const Item = ({product})=>{
 
 
 export  {Item}  
+

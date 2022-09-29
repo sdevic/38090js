@@ -11,7 +11,7 @@ const ItemListContainer = ({greeting}) =>{
    const [loading, setLoading] = useState(true)
    let {IdCategoria} = useParams();
   
-  
+ 
    useEffect(()=>{
       customFetch(products)
          .then(res=> {

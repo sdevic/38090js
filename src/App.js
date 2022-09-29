@@ -18,7 +18,7 @@ return(
       <Routes>
         <Route path='/' element={<ItemListContainer greeting={saludo}/>} />
         <Route path='/categoria/:IdCategoria' element={<ItemListContainer greeting={saludo}/>}/>
-        <Route path='/producto' element={<ItemDetailContainer/>}/>
+        <Route path='/producto/:IdProd' element={<ItemDetailContainer/>}/>
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
       
@@ -31,3 +31,7 @@ return(
 }
 
 export default App;
+
+
+
+
