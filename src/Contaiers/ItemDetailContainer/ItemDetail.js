@@ -16,7 +16,7 @@ const ItemDetail = ({producto})=>{
         {producto.map( (prod, i) =>
         <>
          <Item key={`${prod.product}-${i}`}product={prod} /> 
-         {sendCart? <div id="divFin"><Link to='/cart'><Button id="finCompra">Terminar mi Compra</Button></Link> </div>
+         {sendCart? <div id><Link to='/cart'><Button id="finCompra">Terminar mi Compra</Button></Link> </div>
          :<ItemCount  initial={1} stock = {prod.stock} onAdd={onAdd}/> 
         }
          </>

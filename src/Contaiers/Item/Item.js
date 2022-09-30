@@ -1,5 +1,5 @@
-import { Button ,Text,VStack,Image } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Text,VStack,Image } from "@chakra-ui/react";
+;
 
 const Item = ({product})=>{
   
@@ -12,9 +12,7 @@ const Item = ({product})=>{
             <VStack id="vstack">
                 <Text>{product.description}</Text>
                 <Image id='imgProd' src={product.image} alt="" /> 
-                <Link to={`/producto/${product.id}`}>
-                    <Button>Ver detalle</Button>
-                </Link>    
+                 
                 
             </VStack>
                 
