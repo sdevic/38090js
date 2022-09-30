@@ -3,7 +3,6 @@ import  './Components/Header/Header.css';
 import NavBar from './Components/NavBar/NavBar';
 import Cart from './Contaiers/CartView/Cart';
 import ItemListContainer from './Contaiers/ItemListContainer/ItemListContainer'
-import ItemCount from './Contaiers/ItemCount';
 import ItemDetailContainer from './Contaiers/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
@@ -22,7 +21,7 @@ return(
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
       
-      <ItemCount initial={1} stock = {22}/>
+      
       
     </BrowserRouter>
   </>

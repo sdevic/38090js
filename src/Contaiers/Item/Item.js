@@ -2,8 +2,7 @@ import { Button ,Text,VStack,Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Item = ({product})=>{
- 
-   
+  
     return(
         <>
             {!product ?

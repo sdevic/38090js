@@ -90,3 +90,20 @@ nav{
     align-items: center;
     padding-right: 15%;
 }
+
+#itemCount{
+    
+   padding-left: 42%;
+}
+#finCompra{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 190px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#divFin{
+    padding-top: 2%;
+}
