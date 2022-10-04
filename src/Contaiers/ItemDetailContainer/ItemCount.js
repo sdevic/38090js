@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ItemCount = ({stock, initial,onAdd}) =>{
+const ItemCount = ({stock, initial,onAdd,producto}) =>{
  
   let [contador, setContador] = useState(initial);
   let [titulo, setTitulo] = useState("");
@@ -45,7 +45,7 @@ const ItemCount = ({stock, initial,onAdd}) =>{
         <button onClick={restar}>-</button>
         <input id="cantidad" type="number" value={contador} readOnly></input>        
         <button onClick={sumar}>+</button>
-        <button onClick={onAdd}>Agregar</button>
+        <button disabled={stock <=0}  onClick={() => onAdd( contador)} >Agregar</button>
         <h3>{titulo}</h3>
       </div>
     </>
