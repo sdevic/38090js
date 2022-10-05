@@ -7,14 +7,16 @@ const Customprovider = ({children})=>{
    const [cart, setCart] = useState([]);
 
    const addProd = (producto,cantidad) =>{
-    const nCart = cart.filter(prod=> prod.id !== producto.id)
-    nCart.push({...producto, cantidad: cantidad});
-   setCart(nCart);
-   console.log(cart); 
-   console.log(nCart);
+  if(cart.filter(prod=> prod.id !== producto.id)){
+    setCart([...cart, {...producto, cantidad}]);
+  }
+   
   
    
    };
+   console.log(cart); 
+  
+   
    const deleteProd = (id) =>   cart.find(product => product.id === id)? true:false ;   
 
    const prodRepetido = (id) =>{     
