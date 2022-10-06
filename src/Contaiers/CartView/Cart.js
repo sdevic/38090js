@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
 const Cart = () => {
     const {cart, totalPrecio}= useContext(Context); 
-    console.log(cart);
+    
   
     // si el array esta vacio link al home
     if(cart.length ===0){
@@ -20,6 +20,7 @@ const Cart = () => {
         {
             
             cart.map((product) => <CartItem key={product.id} product={product}/>)
+          
         
         }
         

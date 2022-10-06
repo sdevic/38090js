@@ -18,7 +18,7 @@ const ItemDetailContainer = ({greeting}) =>{
             try{
                 const item = await  customFetch(products);
                 
-                const dato =  await item.filter(function (traer) { return traer.id === IdProd; })
+                const dato =  await item.find(function (traer) { return traer.id === IdProd; })
                 
                
               setProducto(dato)

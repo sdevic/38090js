@@ -8,7 +8,7 @@ const {deleteProd}= useContext(Context);
     return(
         <div>
             
-           
+                <img id='imgProd' src={product.image} alt="" /> 
                 <p> Producto: ${product.product}</p>
                 <p> cantidad:{product.cantidad}</p>
                 <p> Precio unitario:$ {product.price}</p>

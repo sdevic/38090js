@@ -7,15 +7,15 @@ const ItemList = ({listProducts})=>{
     
     return(
         <>
-        {listProducts.map( (prod, i) =>
+            {listProducts.map( (prod, i) =>
            <div key={`${prod.product}-${i}`}>
-        <Item product={prod}/>
-        <div id="detalleBoton">
-        <Link to={`/producto/${prod.id}`}>
-                    <Button id="verDetalle">Ver detalle</Button>
-                </Link> 
+                <Item product={prod}/>
+                <div id="detalleBoton">
+                    <Link to={`/producto/${prod.id}`}>
+                        <Button id="verDetalle">Ver detalle</Button>
+                    </Link> 
                 </div>
-                </div>
+            </div>
                 )}
         </>
         

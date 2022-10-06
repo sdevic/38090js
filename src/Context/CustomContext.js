@@ -10,6 +10,7 @@ const Customprovider = ({children})=>{
 
 
    const addProd = (producto,cantidad) =>{
+    
   if(cart.filter(prod=> prod.id !== producto.id)){
     setCart([...cart, {...producto, cantidad}]);
   }

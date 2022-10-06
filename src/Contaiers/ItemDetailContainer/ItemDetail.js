@@ -27,14 +27,14 @@ const ItemDetail = ({producto})=>{
    
     return(
         <>
-        {producto.map( (prod, i) =>
-        <div key={`${prod.product}-${i}`}>
-         <Item product={prod} /> 
+        
+        <div >
+         <Item product={producto} /> 
          {sendCart? <div id="divFin"><Link to='/cart'><Button id="finCompra">Terminar mi Compra</Button></Link> </div>
-         :<ItemCount initial={1} stock = {prod.stock} onAdd={onAdd}/> 
+         :<ItemCount initial={1} stock = {producto.stock} onAdd={onAdd}/> 
         }
          </div>
-         )}
+         
          
          
             
