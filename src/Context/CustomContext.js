@@ -9,15 +9,15 @@ const Customprovider = ({children})=>{
 
 
 
-   const addProd = (producto,cantidad) =>{
-    
-  if(cart.filter(prod=> prod.id !== producto.id)){
-    setCart([...cart, {...producto, cantidad}]);
+   const addProd = (producto,nCantidad) =>{
+    const { cantidad = 0 } = cart.find(prod=> prod.id === producto.id) || {};
+    const nCart = cart.filter(prod=> prod.id !== producto.id);
+    setCart([...nCart, {...producto, cantidad: cantidad+ nCantidad}]);
   }
    
   
    
-   };
+   
    
   
    
