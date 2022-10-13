@@ -6,6 +6,7 @@ import ItemListContainer from './Contaiers/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Contaiers/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Customprovider from './Context/CustomContext';
+import Formulario from './Contaiers/Formulario/Formulario'
 
 
 
@@ -21,6 +22,7 @@ return(
           <Route path='/categoria/:IdCategoria' element={<ItemListContainer greeting={saludo}/>}/>
           <Route path='/producto/:IdProd' element={<ItemDetailContainer/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/pago' element={<Formulario/>}/>
         </Routes> 
       </Customprovider>
     </BrowserRouter>

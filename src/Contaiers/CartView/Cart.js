@@ -25,6 +25,9 @@ const Cart = () => {
         }
         
         <p>Total:{totalPrecio()}</p>
+        <Link to='/pago'>
+            <button>Pagar</button>
+        </Link>
         </>
     )
 }
