@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-
+//hice un contador trayendo el stock de firestore 
 const ItemCount = ({stock, initial,onAdd,producto}) =>{
  
   let [contador, setContador] = useState(initial);
   let [titulo, setTitulo] = useState("");
 
 
-
+//solo me deja agregaar productos si tengo disponible en el stock
   const sumar = ()=>{
     if(contador < stock){
     setTitulo("");
@@ -17,7 +17,7 @@ const ItemCount = ({stock, initial,onAdd,producto}) =>{
     }
   
   }
-
+//resto hasta 0
   const restar = ()=>{
     if(contador < initial){
       

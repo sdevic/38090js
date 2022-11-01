@@ -2,7 +2,7 @@ import { Item } from "../Item/Item"
 import { Link } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 
-
+//listo los productos desde el item
 const ItemList = ({listProducts})=>{
     
     return(

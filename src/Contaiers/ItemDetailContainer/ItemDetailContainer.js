@@ -9,8 +9,7 @@ const ItemDetailContainer = ({greeting}) =>{
     const [producto, setProducto] = useState([]) ;  
     const [loading, setLoading] = useState(true);
     let {IdProd} = useParams();
-    
-    
+       
    
     
     useEffect(()=>{

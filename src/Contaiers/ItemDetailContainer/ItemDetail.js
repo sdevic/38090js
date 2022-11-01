@@ -7,7 +7,7 @@ import { Context } from "../../Context/CustomContext";
 
 
 
-
+//muestro  el producto con su detalle y el count
 const ItemDetail = ({producto})=>{
    
     const [sendCart, setSendCart] = useState (false); 

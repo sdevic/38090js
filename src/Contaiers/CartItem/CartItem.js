@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../../Context/CustomContext";
 
+//muestro el producto y con el boton eliminar llamo a la funcion deletprod mandando el id del producto a borrar
 
 const CartItem = ({product})=>{
 const {deleteProd}= useContext(Context);
@@ -8,7 +9,7 @@ const {deleteProd}= useContext(Context);
 
     return(
         
-        <div>
+        <div id="productos">
             
                 <img id='imgProd' src={product.image} alt="" /> 
                 <p> Producto: {product.product}</p>
